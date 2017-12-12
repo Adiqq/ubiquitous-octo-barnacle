@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formularz</title>
+    <link rel="stylesheet" type="text/css" href="form.css">
+</head>
+<body>
+<form id="form" name="dane_osobowe">
+    <div id="errors">
+    </div>
+    <table>
+        <tr><td>Imię</td><td><input type="text" name="f_imie" onblur="validateField(this)"></td></tr>
+        <tr><td>Nazwisko</td><td><input type="text" name="f_nazwisko" onblur="validateField(this)"></td></tr>
+        <tr><td>Rok urodzenia</td><td><input type="number" name="f_birth_year" onblur="validateField(this)"></td></tr>
+        <tr><td>Miesiąc urodzenia</td><td><input type="number" name="f_birth_month" onblur="validateField(this)"></td></tr>
+        <tr><td>Dzień urodzenia</td><td><input type="number" name="f_birth_day" onblur="validateField(this)"></td></tr>
+        <tr><td>Hasło</td><td><input type="password" name="f_password" onblur="validateField(this)"></td></tr>
+        <tr><td>Powtórz hasło</td><td><input type="password" name="f_password_repeat" onblur="validateField(this)"></td></tr>
+        <tr><td>Opis</td><td><textarea rows="5" cols="15" name="f_uwagi" onblur="validateField(this)"></textarea>
+        </td></tr>
+        <tr><td colspan="2"><input id="submitButton" type="submit" value="Zarejestruj się"></td></tr>
+    </table>
+</form>
+<script src="form.js"></script>
+</body>
+</html>
